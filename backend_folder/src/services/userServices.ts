@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 import prisma from "../config/prisma";
 import { createPatientInput, loginPatientInput } from "../models/user.schemas";
-import { comparePassword, hashPassword } from "../utils/hashPassword";
 import jwt from "jsonwebtoken";
+import { comparePassword, hashPassword } from "../utils/hashPassword";
 import { uploadOnCloudinary } from "../utils/cloudinary";
 
 // Register Patient
